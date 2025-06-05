@@ -2,109 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sandeep Kumar Sahni</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Kumar Sahni | Computational Materials Scientist</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Sandeep Kumar Sahni</h1>
-      <p>Postdoctoral Research Associate | Computational Materials Scientist | Molecular Dynamics & Atomistic Modeling Expert</p>
-    </header>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed tracking-wide">
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am currently working as a Postdoctoral Research Associate in the Department of Mechanical & Materials Engineering at Western University, Canada. My research combines cutting-edge computational techniques with physical insight to explore material behavior at atomic and microstructural scales. My current focus is on understanding the deformation mechanisms, damage evolution, and failure processes in TRISO nuclear fuel materials, particularly at elevated temperatures.
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-white">
+    <div class="max-w-4xl px-6 py-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Sandeep Kumar Sahni</h1>
+      <h2 class="text-xl md:text-2xl text-gray-600 mb-6">
+        Postdoctoral Research Associate · Western University
+      </h2>
+      <p class="text-lg max-w-3xl mx-auto text-gray-700 mb-4">
+        I specialize in multiscale simulations of material deformation, dislocation mechanics, and atomistic modeling. My work spans across nanoindentation, ceramic materials, and machine learning in materials science.
       </p>
-      <p>
-        I completed my Ph.D. in Materials Science and Engineering from the Indian Institute of Technology (IIT) Kanpur, where I investigated the sintering and deformation behavior of Fe-Ni alloys through a combination of powder metallurgy, mechanical testing, and molecular dynamics (MD) simulations. Prior to that, I obtained my M.Tech in Metallurgical and Materials Engineering from the National Institute of Technology (NIT) Rourkela, where I worked on intermetallic systems.
+      <div class="flex flex-wrap justify-center mt-6 gap-4">
+        <a href="#research" class="bg-blue-600 text-white px-5 py-2 rounded-full shadow hover:bg-blue-700 transition">Research</a>
+        <a href="#publications" class="bg-gray-100 text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-200 transition">Publications</a>
+        <a href="#cv" class="bg-gray-100 text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-200 transition">CV</a>
+        <a href="mailto:sandeepkumar.sahni@outlook.com" class="bg-green-500 text-white px-5 py-2 rounded-full shadow hover:bg-green-600 transition">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Work -->
+  <section id="research" class="bg-gray-100 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center text-gray-800">Latest Work</h3>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold mb-2 text-gray-900">Dislocation-Mediated Plasticity in SiC Polytypes</h4>
+          <p class="text-gray-700 text-sm">
+            Using large-scale MD simulations, I explore how different SiC stacking sequences influence slip behavior, dislocation activity, and transformation under indentation stress.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold mb-2 text-gray-900">Nanoindentation of TRISO Coating Layers</h4>
+          <p class="text-gray-700 text-sm">
+            This project integrates experimental micromechanical testing with simulations to evaluate the mechanical integrity of nuclear fuel coating layers under localized stress.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Research Interest -->
+  <section class="bg-white py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-gray-800 mb-6">Research Interests</h3>
+      <p class="text-gray-700 text-lg">
+        I investigate material deformation mechanisms from atomic to continuum scale. My focus includes:
       </p>
-      <p>
-        My expertise lies in molecular dynamics simulations (LAMMPS), interface mechanics, dislocation modeling, texture evolution, nanoindentation, and multiphysics coupling. I am also interested in the application of machine learning and crystal plasticity finite element modeling (CPFEM) in materials research.
-      </p>
-    </section>
-
-    <section id="research">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Molecular dynamics simulations of ceramics and alloys</li>
-        <li>Deformation and failure mechanisms in nuclear fuel materials (TRISO)</li>
-        <li>Plasticity and dislocation behavior in SiC and Fe-Ni alloys</li>
-        <li>Powder metallurgy processing and texture evolution</li>
-        <li>Atomistic modeling of interfaces and grain boundaries</li>
-        <li>Simulation-assisted material design and performance prediction</li>
+      <ul class="mt-6 space-y-3 text-left max-w-2xl mx-auto text-gray-700">
+        <li>• Dislocation dynamics and defect-mediated plasticity</li>
+        <li>• Molecular dynamics and DFT simulations</li>
+        <li>• High-performance computing for ceramics and metals</li>
+        <li>• Nanoindentation and interface mechanics</li>
+        <li>• Data-driven modeling and machine learning in materials</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 text-sm py-6">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <p>© 2025 Sandeep Kumar Sahni · <a href="mailto:sandeepkumar.sahni@outlook.com" class="underline">Email Me</a> · <a href="https://github.com/sahni-multiscale-simulations" class="underline" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
 
-      <div class="project">
-        <h3>TRISO Fuel Interface Mechanics</h3>
-        <p>
-          Simulation of deformation behavior at interfaces in TRISO fuel particles, particularly IPyC–SiC and Buffer–PyC layers. This work combines large-scale MD simulations and in-situ nanoindentation experiments to evaluate crack initiation and dislocation activity at high temperatures (~800°C).
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Molecular Dynamics of SiC Polytypes</h3>
-        <p>
-          Explored dislocation-mediated plasticity and mechanical anisotropy in 3C, 4H, and 6H SiC polytypes using MD simulations under various loading conditions. These studies are critical for optimizing SiC as a barrier layer in nuclear fuel applications.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Sintering and Rolling of Fe–Ni Alloys</h3>
-        <p>
-          Investigated the microstructural evolution, texture formation, and mechanical response of sintered Fe36Ni alloys subjected to hot and cold rolling along different strain paths. Work included experimental characterization (SEM, EBSD, XRD) and MD simulations of grain-scale deformation.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Ti–Ni–Fe Intermetallic Systems</h3>
-        <p>
-          Studied the high-temperature behavior of multiphase intermetallic compounds in the Ti–Ni–Fe system. Characterization involved hardness testing, SEM/EDS, and phase stability modeling to evaluate potential structural applications in extreme environments.
-        </p>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Ph.D.</strong>, Materials Science and Engineering, IIT Kanpur, India (2024)<br>
-          Thesis: <em>“Investigation of Sintering and Deformation Behavior of Iron-Nickel Alloy via Experiments and Molecular Dynamics Simulation”</em>
-        </li>
-        <li><strong>M.Tech</strong>, Metallurgical and Materials Engineering, NIT Rourkela, India (2015)</li>
-        <li><strong>B.Tech</strong>, Metallurgical Engineering, Government Engineering College, India (2013)</li>
-      </ul>
-    </section>
-
-    <section id="publications">
-      <h2>Selected Publications</h2>
-      <ul>
-        <li><a href="https://scholar.google.co.in/citations?hl=en&user=T3VpWpsAAAAJ" target="_blank">View all publications on Google Scholar</a></li>
-        <li>S. K. Sahni, A. Upadhyaya, S. Bhowmick, "Dislocation-Mediated Plasticity in Silicon Carbide During Nanoindentation: Molecular Dynamics Investigation," <em>Journal under review</em>.</li>
-        <li>S. K. Sahni, A. Upadhyaya, "Molecular Dynamics Study of Deformation Mechanisms in SiC Polytypes for TRISO Fuel Applications," <em>Journal under preparation</em>.</li>
-        <li>S. K. Sahni et al., "Texture and Mechanical Properties of Rolled Fe–Ni Alloy," <em>Materials Science and Engineering A</em>, 2023.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:ssahni23@uwo.ca">ssahni23@uwo.ca</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/sandeep-kumar-sahni-86875228" target="_blank">Profile</a></li>
-        <li>Google Scholar: <a href="https://scholar.google.co.in/citations?hl=en&user=T3VpWpsAAAAJ" target="_blank">Publications</a></li>
-        <li><a class="btn" href="assets/Sandeep_Kumar_Sahni_Resume.pdf" target="_blank">Download Resume</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>© 2025 Sandeep Kumar Sahni | Website designed by Sandeep using HTML & CSS</p>
-    </footer>
-  </div>
 </body>
 </html>
