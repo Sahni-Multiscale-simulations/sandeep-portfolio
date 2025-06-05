@@ -4,65 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep Kumar Sahni | Computational Materials Scientist</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Sandeep Kumar Sahni</h1>
-    <h2>Postdoctoral Research Associate · Western University</h2>
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">Sandeep Kumar Sahni</a>
+      <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="container">
+      <h1>Dr. Sandeep Kumar Sahni</h1>
+      <p>Postdoctoral Research Associate at Western University</p>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="fade-in">
-      <h2 class="section-title">Welcome</h2>
-      <p>
-        I am a computational materials scientist passionate about understanding how materials deform and fail at the nanoscale. I use multiscale modeling—molecular dynamics, DFT, and ML techniques—to uncover the mechanisms behind plasticity, indentation, and damage in ceramic and composite systems.
-      </p>
-    </section>
-
-    <section id="research" class="fade-in">
-      <h2 class="section-title">Latest Research</h2>
-      <div class="card">
-        <h3>Dislocation-Mediated Plasticity in SiC Polytypes</h3>
-        <p>
-          Using molecular dynamics, I study how stacking sequences in SiC influence plasticity and dislocation motion under nanoindentation.
-        </p>
+  <!-- Research Section -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2>Research Highlights</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Dislocation-Mediated Plasticity in SiC Polytypes</h3>
+          <p>Exploring how stacking sequences in SiC influence plasticity and dislocation motion under nanoindentation using molecular dynamics simulations.</p>
+        </div>
+        <div class="card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Nanoindentation of TRISO Fuel Coatings</h3>
+          <p>Combining micromechanical testing and atomistic simulations to assess the role of porosity, interfaces, and pyrocarbon layers in fuel performance.</p>
+        </div>
+        <!-- Add more cards as needed -->
       </div>
-      <div class="card">
-        <h3>Nanoindentation of TRISO Fuel Coatings</h3>
-        <p>
-          This work combines micromechanical testing and atomistic simulations to assess the role of porosity, interfaces, and pyrocarbon layers in fuel performance.
-        </p>
+    </div>
+  </section>
+
+  <!-- Tutorials Section -->
+  <section id="tutorials" class="section">
+    <div class="container">
+      <h2>Tutorials and Resources</h2>
+      <ul>
+        <li><a href="tutorials/tutorial1.html">LAMMPS Tutorial: Pressure-Volume Curve</a></li>
+        <li><a href="tutorials/tutorial2.html">OVITO Visualization Basics</a></li>
+        <!-- Add more tutorials as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Artistic Portfolio</h2>
+      <div class="gallery">
+        <img src="portfolio/artwork1.jpg" alt="Artwork 1">
+        <img src="portfolio/artwork2.jpg" alt="Artwork 2">
+        <!-- Add more artwork images as needed -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="cv" class="fade-in">
-      <h2 class="section-title">Curriculum Vitae</h2>
-      <p>You can download my full CV here:</p>
-      <a class="btn" href="cv/Sandeep_Sahni_CV.pdf" download>Download CV (PDF)</a>
-    </section>
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2>Publications</h2>
+      <p>For a complete list of publications, visit my <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>.</p>
+    </div>
+  </section>
 
-    <section id="publications" class="fade-in">
-      <h2 class="section-title">Selected Publications</h2>
-      <p>See my full list of publications on <a href="https://scholar.google.com" target="_blank">Google Scholar</a>.</p>
-    </section>
-
-    <section id="contact" class="fade-in">
-      <h2 class="section-title">Get in Touch</h2>
-      <p>Email me: <a href="mailto:sandeepkumar.sahni@outlook.com">sandeepkumar.sahni@outlook.com</a></p>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sandeepkumar.sahni@outlook.com">sandeepkumar.sahni@outlook.com</a></p>
       <p>GitHub: <a href="https://github.com/sahni-multiscale-simulations" target="_blank">@sahni-multiscale-simulations</a></p>
-    </section>
-  </main>
+      <p><a href="cv/Sandeep_Sahni_CV.pdf" download>Download CV (PDF)</a></p>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Sandeep Kumar Sahni · Last updated: June 2025</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sandeep Kumar Sahni. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
