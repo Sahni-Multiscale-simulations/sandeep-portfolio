@@ -2,79 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep Kumar Sahni | Computational Materials Scientist</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed tracking-wide">
+<body>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center bg-white">
-    <div class="max-w-4xl px-6 py-12 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Sandeep Kumar Sahni</h1>
-      <h2 class="text-xl md:text-2xl text-gray-600 mb-6">
-        Postdoctoral Research Associate · Western University
-      </h2>
-      <p class="text-lg max-w-3xl mx-auto text-gray-700 mb-4">
-        I specialize in multiscale simulations of material deformation, dislocation mechanics, and atomistic modeling. My work spans across nanoindentation, ceramic materials, and machine learning in materials science.
+  <header>
+    <h1>Sandeep Kumar Sahni</h1>
+    <h2>Postdoctoral Research Associate · Western University</h2>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="fade-in">
+      <h2 class="section-title">Welcome</h2>
+      <p>
+        I am a computational materials scientist passionate about understanding how materials deform and fail at the nanoscale. I use multiscale modeling—molecular dynamics, DFT, and ML techniques—to uncover the mechanisms behind plasticity, indentation, and damage in ceramic and composite systems.
       </p>
-      <div class="flex flex-wrap justify-center mt-6 gap-4">
-        <a href="#research" class="bg-blue-600 text-white px-5 py-2 rounded-full shadow hover:bg-blue-700 transition">Research</a>
-        <a href="#publications" class="bg-gray-100 text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-200 transition">Publications</a>
-        <a href="#cv" class="bg-gray-100 text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-200 transition">CV</a>
-        <a href="mailto:sandeepkumar.sahni@outlook.com" class="bg-green-500 text-white px-5 py-2 rounded-full shadow hover:bg-green-600 transition">Contact</a>
+    </section>
+
+    <section id="research" class="fade-in">
+      <h2 class="section-title">Latest Research</h2>
+      <div class="card">
+        <h3>Dislocation-Mediated Plasticity in SiC Polytypes</h3>
+        <p>
+          Using molecular dynamics, I study how stacking sequences in SiC influence plasticity and dislocation motion under nanoindentation.
+        </p>
       </div>
-    </div>
-  </section>
-
-  <!-- Latest Work -->
-  <section id="research" class="bg-gray-100 py-16 px-6">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-bold mb-10 text-center text-gray-800">Latest Work</h3>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-          <h4 class="text-xl font-semibold mb-2 text-gray-900">Dislocation-Mediated Plasticity in SiC Polytypes</h4>
-          <p class="text-gray-700 text-sm">
-            Using large-scale MD simulations, I explore how different SiC stacking sequences influence slip behavior, dislocation activity, and transformation under indentation stress.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-          <h4 class="text-xl font-semibold mb-2 text-gray-900">Nanoindentation of TRISO Coating Layers</h4>
-          <p class="text-gray-700 text-sm">
-            This project integrates experimental micromechanical testing with simulations to evaluate the mechanical integrity of nuclear fuel coating layers under localized stress.
-          </p>
-        </div>
+      <div class="card">
+        <h3>Nanoindentation of TRISO Fuel Coatings</h3>
+        <p>
+          This work combines micromechanical testing and atomistic simulations to assess the role of porosity, interfaces, and pyrocarbon layers in fuel performance.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About / Research Interest -->
-  <section class="bg-white py-16 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-3xl font-bold text-gray-800 mb-6">Research Interests</h3>
-      <p class="text-gray-700 text-lg">
-        I investigate material deformation mechanisms from atomic to continuum scale. My focus includes:
-      </p>
-      <ul class="mt-6 space-y-3 text-left max-w-2xl mx-auto text-gray-700">
-        <li>• Dislocation dynamics and defect-mediated plasticity</li>
-        <li>• Molecular dynamics and DFT simulations</li>
-        <li>• High-performance computing for ceramics and metals</li>
-        <li>• Nanoindentation and interface mechanics</li>
-        <li>• Data-driven modeling and machine learning in materials</li>
-      </ul>
-    </div>
-  </section>
+    <section id="cv" class="fade-in">
+      <h2 class="section-title">Curriculum Vitae</h2>
+      <p>You can download my full CV here:</p>
+      <a class="btn" href="cv/Sandeep_Sahni_CV.pdf" download>Download CV (PDF)</a>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-200 text-sm py-6">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <p>© 2025 Sandeep Kumar Sahni · <a href="mailto:sandeepkumar.sahni@outlook.com" class="underline">Email Me</a> · <a href="https://github.com/sahni-multiscale-simulations" class="underline" target="_blank">GitHub</a></p>
-    </div>
+    <section id="publications" class="fade-in">
+      <h2 class="section-title">Selected Publications</h2>
+      <p>See my full list of publications on <a href="https://scholar.google.com" target="_blank">Google Scholar</a>.</p>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>Email me: <a href="mailto:sandeepkumar.sahni@outlook.com">sandeepkumar.sahni@outlook.com</a></p>
+      <p>GitHub: <a href="https://github.com/sahni-multiscale-simulations" target="_blank">@sahni-multiscale-simulations</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sandeep Kumar Sahni · Last updated: June 2025</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
